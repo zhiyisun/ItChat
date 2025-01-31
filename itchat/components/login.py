@@ -58,6 +58,7 @@ def login(self, enableCmdQR=False, picDir=None, qrCallback=None,
             elif status == '201':
                 if isLoggedIn is not None:
                     logger.info('Please press confirm on your phone.')
+                    time.sleep(5)
                     isLoggedIn = None
             elif status != '408':
                 break
